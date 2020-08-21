@@ -6,15 +6,14 @@ function Card({ pokemon }) {
        <div className="Card">
            <div className="Card__img">
                <img src={pokemon.sprites.front_default} alt=""/>
-               <div className="Card__Name">
+               <div className="Card__name">
                     {pokemon.name}
                    <div className="Card__types">
                     {pokemon.types.map(type => {
                           return (
                               <div className="Card__type">
                                   {type.type.name} </div>      
-                    })}
-
+                    )}
                        <div className="Card__info">
                                 <div className="Card__data Card__data--weight">
                                     <p className="title">Weight</p>
@@ -32,6 +31,7 @@ function Card({ pokemon }) {
               </div>
               </div>
                    </div>
+               </div>
                </div>
                
     );
